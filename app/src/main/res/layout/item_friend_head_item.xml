@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_friend_item"
+              android:gravity="center_vertical"
+              android:background="@android:color/white"
+              style="@style/mw.hor">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/notice"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            style="@style/mw.hor"
+            >
+
+            <TextView
+                android:id="@+id/tv_friend_head_title"
+                style="@style/ww.black"
+                android:layout_weight="1"
+                android:text="通知"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/bg_theme3_solid_round"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginTop="12dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

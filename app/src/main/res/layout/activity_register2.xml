@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login_register"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title" />
+
+    <TextView
+        android:id="@+id/tv_register_title"
+        style="@style/title_login_register"
+        android:text="新用户注册" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <EditText
+            android:id="@+id/ed_register_password"
+            style="@style/input_number"
+            android:hint="密    码"
+            android:background="@drawable/bg_line_under"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ed_register_confirm_password"
+        style="@style/input_number"
+        android:layout_marginTop="10dp"
+        android:hint="确认密码"
+        android:background="@drawable/bg_line_under"
+        android:inputType="textPassword"
+        android:maxLength="16" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_commit"
+        android:text="完成" />
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_personal_reservation"
+        style="@style/mw.hor.15dp"
+        android:gravity="center">
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/pic33"
+            />
+
+        <TextView
+            style="@style/item_personal_name"
+            android:text="我的预约"/>
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/right_arrow"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/view1px"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:id="@+id/ll_account_balance"
+        android:gravity="center">
+
+
+        <ImageView
+            style="@style/ww"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/pic31"
+            />
+
+        <TextView
+            style="@style/item_personal_name"
+            android:text="账户余额"/>
+
+        <TextView
+            style="@style/ww.12sp"
+            android:layout_marginTop="3dp"
+            android:text="¥"
+            android:layout_marginRight="1px"
+            android:textColor="@color/bg_theme3"
+            />
+
+        <TextView
+            android:id="@+id/tv_personal_balance"
+            style="@style/ww"
+            android:layout_marginRight="20dp"
+            android:text="00.00"
+            android:textColor="@color/bg_theme3"
+            android:textSize="22sp"
+            />
+
+        <ImageView
+            style="@style/ww"
+            android:paddingRight="15dp"
+            android:src="@drawable/right_arrow"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/view1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_Records_consumption"
+        style="@style/mw.hor.15dp"
+        android:gravity="center">
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/pic32"
+            />
+
+        <TextView
+            style="@style/item_personal_name"
+            android:text="账户明细"/>
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/right_arrow"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/view1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_treasure_action"
+        style="@style/mw.hor.15dp"
+        android:gravity="center">
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/pic30"
+            />
+
+        <TextView
+            style="@style/item_personal_name"
+            android:text="寻宝活动"/>
+
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/right_arrow"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/view1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_my_notice"
+        style="@style/mw.hor.15dp"
+        android:gravity="center">
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/pic29"/>
+
+        <TextView
+            style="@style/item_personal_name"
+            android:text="系统消息"/>
+
+        <ImageView
+            style="@style/ww"
+            android:src="@drawable/right_arrow"/>
+
+    </LinearLayout>
+
+    <View style="@style/view1px"/>
+</LinearLayout>

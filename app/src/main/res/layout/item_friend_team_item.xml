@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_friend_team_item"
+              style="@style/ll_details_content">
+
+    <ImageView
+        android:id="@+id/iv_team_img"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            style="@style/mw.hor"
+            >
+
+            <TextView
+                android:id="@+id/tv_team_name"
+                style="@style/ww.black"
+                android:layout_weight="1"
+                android:text="队名"
+                />
+
+            <TextView
+                android:id="@+id/tv_team_add_time"
+                style="@style/ww.13sp"
+                android:alpha="0.7"
+                android:text="2088-8-8"
+                android:textColor="@color/bg_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_friend_img_list"
+            android:layout_marginTop="6dp"
+            style="@style/mw.hor">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

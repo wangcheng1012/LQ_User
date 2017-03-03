@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver">
+
+    <include layout="@layout/item_title"/>
+    <TextView
+        style="@style/mw"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:padding="3dp"
+        android:background="@color/bg_theme2"
+        android:text="长按地图选择坐标"
+        android:gravity="center"
+        />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/ll_details_content"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/ww"
+        android:text="基本信息"
+        android:textColor="@color/font_theme2"
+        android:textSize="14sp"
+        />
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:text="联系电话"
+            android:textColor="@color/bg_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_venue_tel"
+            style="@style/ww.13sp"
+            android:layout_marginLeft="20dp"
+            android:text="023-123456789"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/view1dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:text="营业时间"
+            android:textColor="@color/bg_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_time"
+            style="@style/ww.13sp"
+            android:layout_marginLeft="20dp"
+            android:text="00:00-23:59"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/view1dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:text="联系地址"
+            android:textColor="@color/bg_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_venue_address"
+            style="@style/ww.13sp"
+            android:layout_marginLeft="20dp"
+            android:text="重庆市"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <View style="@style/view1dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:text="收费标准"
+            android:textColor="@color/bg_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_min_max"
+            style="@style/ww.13sp"
+            android:layout_marginLeft="20dp"
+            android:text="全场¥/小时"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

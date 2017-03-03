@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_ballpark_nearby_item"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/mw.hor.bgWhite"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_ballpark_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nearby_icon"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_ballpark_nearby_name"
+                style="@style/ww"
+                android:textColor="@android:color/black"
+                />
+
+            <LinearLayout
+                style="@style/mw.hor"
+                android:layout_below="@id/tv_ballpark_nearby_name"
+                android:layout_marginTop="5dp">
+
+                <com.dingwei.lq_user.ui.myview.MyStarBar
+                    android:id="@+id/starBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    ratingbar:starCount="5"
+                    ratingbar:starDistance="5dp"
+                    ratingbar:starEmpty="@drawable/star_empty"
+                    ratingbar:starFill="@drawable/star_full"
+                    ratingbar:starSize="11dp"/>
+
+                <TextView
+                    android:id="@+id/tv_ballpark_score"
+                    style="@style/ww.13sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/bg_gray"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/mw.hor"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/clock"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ballpark_use_num"
+                    style="@style/ww.12sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/bg_gray"
+                    />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/loc"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ballpark_distance"
+                    style="@style/ww.12sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/bg_gray"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_next"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_nearby_price1"
+                style="@style/ww.white"
+                android:text="免费"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_nearby_price2"
+                style="@style/ww.ver">
+
+                <TextView
+                    android:id="@+id/tv_nearby_min"
+                    style="@style/ww.white"
+                    android:layout_gravity="center"
+                    android:text="¥00"
+                    />
+
+                <TextView
+                    style="@style/ww.white"
+                    android:layout_gravity="center"
+                    android:text="起"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

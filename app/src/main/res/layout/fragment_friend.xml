@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white">
+
+    <include layout="@layout/item_title"/>
+
+    <FrameLayout
+        style="@style/mm"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/bg_theme">
+
+            <LinearLayout
+                android:id="@+id/ll_friend_friends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    style="@style/ww"
+                    android:src="@drawable/friend_fucos"
+                    />
+
+                <TextView
+                    style="@style/ww.12sp"
+                    android:layout_marginTop="5dp"
+                    android:text="我的好友"
+                    android:textColor="@color/font_theme2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_friend_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    style="@style/ww"
+                    android:src="@drawable/friend_team"
+                    />
+
+                <TextView
+                    style="@style/ww.12sp"
+                    android:layout_marginTop="5dp"
+                    android:text="我的球队"
+                    android:textColor="@color/font_theme2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_friend_near"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    style="@style/ww"
+                    android:src="@drawable/friend_near"
+                    />
+
+                <TextView
+                    style="@style/ww.12sp"
+                    android:layout_marginTop="5dp"
+                    android:text="附近"
+                    android:textColor="@color/font_theme2"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="100dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_friend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

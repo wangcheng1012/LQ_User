@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/mw"
+             android:id="@+id/fl_reservation_item"
+             android:background="@color/bg_white"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_reservation_item"
+        style="@style/ll_details_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            style="@style/mw.hor"
+            >
+
+            <LinearLayout
+                style="@style/mw.hor"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_reservation_venue_img"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <LinearLayout
+                    style="@style/mw"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_reservation_add_time"
+                        style="@style/ww.12sp"
+                        android:text="2088-8-8 00:00"
+                        android:textColor="@color/bg_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_reservation_venue_name"
+                        style="@style/ww"
+                        android:text="篮球场"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_reservation_address"
+                        style="@style/ww.13sp"
+                        android:text="重庆市"
+                        android:textColor="@color/bg_gray"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <LinearLayout
+            style="@style/mw.hor"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    style="@style/mw.hor"
+
+                    >
+
+                    <TextView
+                        style="@style/ww.13sp"
+                        android:text="预约场地: "
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_reservation_ballpark_name"
+                        style="@style/ww.13sp"
+                        android:text="1号球场"
+                        android:textColor="@android:color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/mw.hor"
+
+                    >
+
+                    <TextView
+                        style="@style/ww.13sp"
+                        android:text="预约时间: "
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_reservation_time_text"
+                        style="@style/ww.13sp"
+                        android:text="17:00-18:00"
+                        android:textColor="@android:color/black"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_reservation_item_status1"
+                style="@style/ww.13sp"
+                android:layout_gravity="center_vertical"
+                android:text="已完成"
+                android:visibility="gone"
+                android:textColor="@color/bg_gray"
+                />
+            <TextView
+                android:id="@+id/tv_reservation_item_status2"
+                style="@style/ww.13sp"
+                android:layout_gravity="center_vertical"
+                android:text=" 去评价 "
+                android:padding="6dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_theme2_rectangle"
+                android:textColor="@color/bg_theme2"
+                />
+            <ImageView
+                android:id="@+id/iv_reservation_item_status3"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/erweima"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reservation_order_num"
+        style="@style/ww.white"
+        android:textSize="12sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_theme2_solid_5ellipse"
+        android:padding="5dp"
+        android:text="订单号: "
+        />
+</FrameLayout>

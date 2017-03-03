@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_title"/>
+
+    <com.dingwei.lq_user.ui.myview.MyScrollView
+        style="@style/mm">
+
+        <include layout="@layout/item_reservation_details_content"/>
+
+    </com.dingwei.lq_user.ui.myview.MyScrollView>
+
+</LinearLayout>

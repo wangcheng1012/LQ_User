@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mw.ver"
+              android:background="@color/bg_white">
+
+    <LinearLayout
+        android:id="@+id/ll_bank_select"
+        style="@style/ll_details_content"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:padding="0dp"
+        >
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_select_bank_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                />
+
+
+            <TextView
+                android:id="@+id/iv_select_bank_name"
+                style="@style/ww"
+                android:layout_marginLeft="20dp"
+                android:text="银行"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

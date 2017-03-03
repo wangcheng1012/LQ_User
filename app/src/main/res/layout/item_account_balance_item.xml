@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mw"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+              android:layout_marginTop="10dp"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_account_balance_title"
+            style="@style/ww"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:text="充值"
+            />
+
+        <TextView
+            android:id="@+id/tv_account_balance_money"
+            style="@style/ww"
+            android:text="+ 208"
+            android:textColor="@color/bg_red"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_account_balance_add_time"
+        style="@style/ww.13sp"
+        android:textColor="@color/bg_gray"
+        android:layout_gravity="right"
+        android:text="2016-12-21 12:00"
+        />
+
+    <View
+        android:layout_marginTop="15dp"
+        style="@style/view1dp"/>
+
+</LinearLayout>

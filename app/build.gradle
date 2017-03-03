@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.dingwei.lq_user"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 100
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a','x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "8d04311c5ef2653e118298c0", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'wanqiu'
+            keyPassword 'wanqiu'
+            storeFile file('/keystore/lanqiu.jks')
+            storePassword 'wanqiu'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+//    环信
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.lzy.net:okgo:2.1.3'
+    compile 'com.alibaba:fastjson:1.1.55.android'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //上传头像
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+    //图片上传
+    compile 'cn.bingoogolapple:bga-photopicker:1.1.4@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.0@aar'
+    //选择时间
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    compile project(':easeui')
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.0'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/hyphenatechat_3.2.3.jar')
+    compile files('libs/alipaySingle-20161222.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_sms.jar')
+    compile files('libs/SocialSDK_WeiXin_Full.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_tool.jar')
+    //    极光
+    compile 'cn.jiguang.sdk:jpush:3.0.1'  // 此处以JPush 3.0.0 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.0'  // 此处以JCore 1.0.0 版本为例。
+}

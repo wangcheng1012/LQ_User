@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingRight="10dp"
+    android:background="@color/bg_theme">
+
+    <ImageButton
+        android:id="@+id/ib_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:src="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/tv_title_left_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="左边文字"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_title_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_title_right_all"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_title_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="右边文字"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/ib_title_right"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+</RelativeLayout>

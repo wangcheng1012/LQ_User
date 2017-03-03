@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_theme">
+
+    <include layout="@layout/item_title"/>
+
+    <FrameLayout
+        style="@style/mm"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            style="@style/mm"
+            android:scaleType="fitXY"
+            android:src="@drawable/team_theme_icon"/>
+
+        <RelativeLayout
+            style="@style/mm"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_team_theme_pk"
+                style="@style/ww.white"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/pk_icon"
+                />
+
+            <TextView
+                android:id="@+id/tv_team_theme_leave"
+                style="@style/ww.white"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:text="申请离队"
+                />
+
+
+            <LinearLayout
+                style="@style/mw.ver"
+                android:layout_alignParentBottom="true"
+                >
+
+                <TextView
+                    android:id="@+id/tv_theme_team_name"
+                    style="@style/ww.white"
+                    android:text="球队"
+                    android:textSize="26sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_theme_team_desc"
+                    style="@style/ww.white.13sp"
+                    android:layout_marginTop="2dp"
+                    android:text="简述"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_team_theme_member"
+                    style="@style/mw.hor"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/ww.white.13sp"
+                        android:text="球队成员 "
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_friend_img_list"
+                        style="@style/mw.hor"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_team_theme_comment"
+                    style="@style/mw.hor"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_null"
+                        style="@style/ww.white.13sp"
+                        android:text="暂无评论"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_team_impress1"
+                        style="@style/ww.white.13sp"
+                        android:background="@drawable/bg_white_solid_ellipse"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_team_impress2"
+                        style="@style/ww.white.13sp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_white_solid_ellipse"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_team_impress3"
+                        style="@style/ww.white"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_white_solid_ellipse"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        style="@style/ww.white.13sp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        style="@style/ww"
+                        android:src="@drawable/right_arrow"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_team_theme_commit"
+                    style="@style/btn_commit"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="15dp"
+                    android:text="申请入队"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

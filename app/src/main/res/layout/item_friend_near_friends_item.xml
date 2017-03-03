@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/ll_details_content"
+              android:id="@+id/ll_friend_near_friends_item"
+              android:layout_marginBottom="0dp"
+              android:layout_marginTop="15dp"
+              android:padding="10dp">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:id="@+id/iv_near_friends_headimg"
+        android:layout_height="35dp"
+        android:src="@drawable/personal_head"
+        />
+
+    <TextView
+        android:id="@+id/tv_near_friends_nickname"
+        style="@style/ww.black"
+        android:layout_marginLeft="15dp"
+        android:text="昵称"
+        />
+
+    <TextView
+        android:id="@+id/tv_near_friends_age"
+        style="@style/ww.white"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_theme2_solid_ellipse"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="♂ 22"
+        android:textSize="12sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_team_flag"
+        style="@style/ww"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/team_flag"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/loc"
+        />
+
+    <TextView
+        android:id="@+id/tv_near_friends_distance"
+        style="@style/ww.13sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/bg_gray"
+        android:text="1.7km"
+        />
+
+
+</LinearLayout>

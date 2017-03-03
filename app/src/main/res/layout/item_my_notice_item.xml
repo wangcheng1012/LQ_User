@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_notice_item"
+    style="@style/mw.hor.15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_white_ellipse">
+
+    <ImageView
+        android:id="@+id/iv_notice_headimg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/notice" />
+
+    <LinearLayout
+        style="@style/mw.ver"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp">
+
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_notice_title"
+                style="@style/ww.black"
+                android:layout_weight="1"
+                android:text="标题" />
+
+
+            <TextView
+                android:id="@+id/tv_notice_add_time"
+                style="@style/ww.12sp"
+                android:layout_gravity="center_vertical"
+                android:text="01-01 00:00"
+                android:textColor="@color/bg_gray666" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_notice_content"
+            style="@style/ww.12sp"
+            android:layout_marginTop="3dp"
+            android:text="类型"
+            android:textColor="@color/bg_gray666" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white">
+
+    <LinearLayout
+        style="@style/ll_details_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_result_code_img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:textColor="@color/bg_gray"
+                android:text="预约码:  "
+                />
+
+            <TextView
+                android:id="@+id/tv_result_code"
+                android:textColor="@color/bg_red"
+                style="@style/ww"
+                android:text="asdf12345"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+        
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            style="@style/view1dp"/>
+        <TextView
+            style="@style/ww.12sp"
+            android:textColor="@color/bg_gray"
+            android:text="温馨提示:"
+            />
+        <TextView
+            android:textColor="@color/bg_gray"
+            style="@style/ww.12sp"
+            android:text="预约码将作为唯一的凭证，请妥善保管，打死也不告诉别人，女朋友也不行"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_details_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_result_venue_name"
+            style="@style/ww"
+            android:text="篮球场"
+            android:textColor="@android:color/black"
+            />
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="预约人数"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_number"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="0人"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="球场类型"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_ballpark_type"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="全场"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="预约时间"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_order_time"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="00:00-00:00"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="预约球场"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_ballpark_name"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="球场"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="合        计"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_price"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="¥00.00"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="联系电话"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_tel"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="023-12345678"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="营业时间"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_time"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="00:00-00:00"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="联系地址"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_address"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="重庆市"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

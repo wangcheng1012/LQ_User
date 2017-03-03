@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_tv_comment_item"
+              style="@style/ww.ver">
+
+    <TextView
+        android:id="@+id/tv_flow_title"
+        style="@style/ww.13sp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_gray666_rectangle"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="6dp"
+        android:text=""
+        android:textColor="@color/bg_gray666"
+        />
+
+</LinearLayout>

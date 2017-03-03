@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white"
+    >
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_theme"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ballpark_nearby_size"
+            style="@style/item_tv_ballpark_nearby"
+            android:text="距离 ↑"/>
+
+        <TextView
+            android:id="@+id/tv_ballpark_nearby_price"
+            style="@style/item_tv_ballpark_nearby"
+            android:text="费用 ↑"/>
+
+        <TextView
+            android:id="@+id/tv_ballpark_nearby_hot"
+            style="@style/item_tv_ballpark_nearby"
+            android:text="人气 ↓"/>
+
+        <TextView
+            android:id="@+id/tv_ballpark_nearby_good"
+            style="@style/item_tv_ballpark_nearby"
+            android:text="好评 ↓"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_ballpark_nearby"
+        style="@style/mm"/>
+
+</LinearLayout>

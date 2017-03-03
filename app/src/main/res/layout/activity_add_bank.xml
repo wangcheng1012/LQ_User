@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white">
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bank_select"
+        style="@style/ll_details_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            style="@style/mw.hor">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/ww.13sp"
+                android:text="开  户  名"
+                android:textColor="@color/bg_gray"/>
+
+            <View
+                style="@style/vertical_line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:alpha="1"/>
+
+            <EditText
+                android:id="@+id/et_bank_card_name"
+                style="@style/ww.13sp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            style="@style/mw.hor">
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="银行卡号"
+                android:textColor="@color/bg_gray"
+                />
+
+            <View
+                style="@style/vertical_line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:alpha="1"/>
+
+            <EditText
+                android:id="@+id/et_bank_card_num"
+                style="@style/ww.13sp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:maxLength="21"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            style="@style/mw.hor">
+
+            <TextView
+                style="@style/ww.13sp"
+                android:text="选择银行"
+                android:textColor="@color/bg_gray"
+                />
+
+            <View
+                style="@style/vertical_line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:alpha="1"/>
+
+            <TextView
+                android:id="@+id/tv_bank_id"
+                style="@style/ww.13sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                />
+
+            <ImageView
+                style="@style/ww"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_bank_commit"
+        style="@style/btn_commit"
+        android:text="确定添加"
+        />
+
+</LinearLayout>

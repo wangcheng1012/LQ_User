@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        style="@style/mw.ver"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_white_ellipse"
+        android:padding="15dp"
+        >
+
+        <EditText
+            android:id="@+id/et_photo_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:hint="请输入你要发布的内容..."
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/bg_gray666"
+            android:textSize="14sp"
+            />
+
+        <FrameLayout
+            android:id="@+id/fl_video"
+            style="@style/ww">
+
+        <!--<VideoView-->
+            <!--android:id="@+id/vv_video"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="80dp"/>-->
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="100dp"
+                android:scaleType="centerCrop"
+                android:layout_height="80dp"/>
+
+        </FrameLayout>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/mw"
+            android:drawableLeft="@drawable/loc"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:paddingTop="15dp"
+            android:text="所在位置"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white">
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        style="@style/ll_details_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_set_update_password"
+            style="@style/mw.hor"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                style="@style/ww"
+                android:layout_weight="1"
+                android:text="修改密码"
+                android:textColor="@android:color/black"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/ll_set_tel"
+            style="@style/mw.hor"
+            >
+
+            <TextView
+                style="@style/ww"
+                android:layout_weight="1"
+                android:text="关于我们"
+                android:textColor="@android:color/black"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_set_feedback"
+            android:gravity="center_vertical"
+            style="@style/mw.hor"
+            >
+
+            <TextView
+                style="@style/ww"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textColor="@android:color/black"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_set_exit"
+        style="@style/ll_details_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ww"
+            android:layout_gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/bg_red"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/mm"
+                android:background="@drawable/pk_details">
+
+    <include layout="@layout/item_title"/>
+
+
+    <LinearLayout
+        style="@style/mw.ver"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            style="@style/mw.hor.15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <ImageView
+                android:id="@+id/iv_pk_detail_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/head_photo_normal"
+                />
+
+            <LinearLayout
+                style="@style/mw.ver"
+                android:layout_marginLeft="15dp">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+
+                    style="@style/mw.hor">
+
+                    <TextView
+                        android:id="@+id/tv_pk_detail_team_name"
+                        style="@style/ww.white"
+                        android:layout_weight="1"
+                        android:text="昵称"
+                        />
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_pk_detail_call"
+                        style="@style/ww.white"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="联系队长"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_pk_detail_date"
+                    style="@style/ww.white"
+                    android:layout_marginTop="15dp"
+                    android:text="2088-8-8 00:00"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_pk_detail_address"
+                    style="@style/ww.white"
+                    android:text="重庆市"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_pk_detail_desc"
+                    style="@style/ww.white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pk_detail_is_handle2"
+            style="@style/ww.white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:text="已迎战"
+            android:visibility="gone"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_pk_detail_is_handle1"
+            style="@style/mw.hor"
+            android:visibility="gone"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp">
+
+            <Button
+                android:id="@+id/btn_pk_detail_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_next"
+                android:text="拒绝"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btn_pk_detail_commit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_theme3_rectangles"
+                android:text="迎战"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

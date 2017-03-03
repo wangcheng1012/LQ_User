@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dingwei.lq_user.ui.myview.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/bg_white"
+                                            android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_ballpark_details"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+        <include layout="@layout/item_title"/>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="200dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/tv_details_page_num"
+                style="@style/ww.white"
+                android:text="0/0"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            style="@style/mw"
+            android:layout_marginTop="230dp">
+
+            <include layout="@layout/item_ballpark_details_content"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</com.dingwei.lq_user.ui.myview.MyScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white">
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        android:id="@+id/fl_create_ream_upload"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_white_ellipse">
+
+        <ImageView
+            android:id="@+id/iv_create_ream_theme"
+            style="@style/ww"
+            android:src="@drawable/upload"
+            />
+
+        <TextView
+            style="@style/ww"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="上传主题形象图"
+            android:textColor="@color/font_theme4"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/mw.ver"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_white_ellipse"
+        android:padding="15dp">
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_create_team_name"
+                style="@style/ww.black"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="给你的球队取个名字吧(8个字以内)"
+                android:inputType="text"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textColorHint="@color/font_theme4"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_create_team_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/location"/>
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/et_create_team_desc"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|start"
+            android:hint="给你的球队说明一下吧(20个字以内)"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColorHint="@color/font_theme4"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

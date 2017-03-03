@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm.ver"
+    android:background="@color/bg_white">
+
+    <include layout="@layout/item_title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        style="@style/mm">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_notice"
+            style="@style/mw" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_title"/>
+
+    <com.dingwei.lq_user.ui.myview.MyScrollView
+        style="@style/mm">
+
+
+        <FrameLayout
+            style="@style/mm"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/bg_theme"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_edit_head"
+                    style="@style/ww.ver">
+
+                    <ImageView
+                        android:id="@+id/iv_edit_headimg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/head_photo_normal"
+                        />
+
+                    <TextView
+                        style="@style/ww.white"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="修改头像"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                style="@style/mm"
+                android:layout_marginTop="160dp"
+                >
+
+                <include layout="@layout/item_personal_edit_foot"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+    </com.dingwei.lq_user.ui.myview.MyScrollView>
+
+</LinearLayout>

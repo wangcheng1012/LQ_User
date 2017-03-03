@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        style="@style/mw.ver"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_white_ellipse"
+        android:padding="15dp"
+        >
+
+        <EditText
+            android:id="@+id/et_photo_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:hint="请输入你要发布的内容..."
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/bg_gray666"
+            android:textSize="14sp"
+            />
+
+        <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+            android:id="@+id/bgaImg"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bga_snpl_plusDrawable="@drawable/add"
+            app:bga_snpl_maxItemCount="6"/>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/mw"
+            android:drawableLeft="@drawable/loc"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:paddingTop="15dp"
+            android:text="所在位置"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

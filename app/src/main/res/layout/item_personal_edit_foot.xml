@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/ll_details_content2"
+              android:paddingLeft="15dp"
+              android:paddingTop="15dp"
+              android:paddingBottom="15dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:text="球员绰号"
+            android:paddingLeft="5dp"
+            android:textColor="@color/bg_gray"
+            />
+
+        <EditText
+            android:id="@+id/ed_edit_nickname"
+            style="@style/ww.right_edit_black"
+            android:paddingRight="20dp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="性别"
+            android:paddingLeft="5dp"
+            android:textColor="@color/bg_gray"
+            />
+
+        <ImageView
+            android:id="@+id/iv_edit_male"
+            style="@style/ww"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/bg_male_select"
+            />
+
+        <ImageView
+            android:id="@+id/iv_edit_female"
+            style="@style/ww"
+            android:src="@drawable/bg_female_select"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:text="年龄"
+            android:paddingLeft="5dp"
+            android:textColor="@color/bg_gray"
+            />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/ed_edit_age"
+            style="@style/ww.right_edit_black"
+            android:paddingRight="20dp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:text="身高(cm)"
+            android:paddingLeft="5dp"
+            android:textColor="@color/bg_gray"
+            />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/ed_edit_heights"
+            style="@style/ww.right_edit_black"
+            android:paddingRight="20dp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:paddingLeft="5dp"
+            android:text="体重(kg)"
+            android:textColor="@color/bg_gray"
+            />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/ed_edit_weights"
+            style="@style/ww.right_edit_black"
+            android:text=""
+            android:paddingRight="20dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:paddingLeft="5dp"
+            android:text="地址"
+            android:textColor="@color/bg_gray"
+            />
+
+        <EditText
+            android:id="@+id/ed_edit_address"
+            style="@style/ww.right_edit_black"
+            android:paddingRight="20dp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:paddingLeft="5dp"
+            android:text="擅长位置"
+            android:textColor="@color/bg_gray"
+            />
+
+        <EditText
+            android:id="@+id/ed_edit_position"
+            style="@style/ww.right_edit_black"
+            android:paddingRight="20dp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        >
+
+        <TextView
+            style="@style/ww.13sp"
+            android:paddingLeft="5dp"
+            android:text="成名技"
+            android:textColor="@color/bg_gray"
+            />
+
+        <EditText
+            android:id="@+id/ed_edit_skill"
+            style="@style/ww.right_edit_black"
+            android:paddingRight="20dp"
+            android:text=""
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

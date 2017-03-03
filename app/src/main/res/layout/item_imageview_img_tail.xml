@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/ww">
+
+    <TextView
+        android:id="@+id/tv_img_tail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/bg_btn_next"
+        android:gravity="center"
+        android:text="+0"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_login_register"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_title"/>
+
+    <TextView
+        android:id="@+id/tv_register_title"
+        style="@style/title_login_register"
+        android:text="新用户注册"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <EditText
+            android:id="@+id/ed_register_phone"
+            style="@style/input_number"
+            android:background="@drawable/bg_line_under"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:maxLength="11"/>
+
+        <Button
+            android:id="@+id/btn_register_sendcode"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_edit_rectangle"
+            android:text="获取验证码"
+            android:textColor="@color/bg_theme2"
+            android:textSize="11sp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ed_register_code"
+        style="@style/input_number"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_line_under"
+        android:hint="验证码"
+        android:maxLength="8"/>
+
+    <ImageButton
+        android:id="@+id/ib_register_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/round_next"/>
+
+</LinearLayout>

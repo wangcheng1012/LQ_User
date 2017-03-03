@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mw"
+              android:layout_height="260dp"
+              android:background="@color/bg_theme"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/iv_friend_theme_headimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/head_photo_normal"/>
+
+        <TextView
+            android:id="@+id/tv_friend_theme_nickname"
+            style="@style/ww.white"
+            android:layout_centerInParent="true"
+            android:paddingTop="4dp"
+            android:text="昵称"
+            android:textSize="18sp"
+            />
+
+    <TextView
+        android:id="@+id/tv_friend_theme_age"
+        style="@style/ww.white"
+        android:background="@drawable/bg_theme3_solid_ellipse"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="♀ 00"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            style="@style/ll_fragment_personal">
+
+            <TextView
+                android:id="@+id/tv_friend_theme_news_count"
+                style="@style/ww.white.13sp"
+                android:text="0"/>
+
+            <TextView
+                style="@style/ww.white.13sp"
+                android:text="动态"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_line"/>
+
+        <LinearLayout
+            style="@style/ll_fragment_personal">
+
+            <TextView
+                android:id="@+id/tv_friend_theme_friend_count"
+                style="@style/ww.white.13sp"
+                android:text="0"/>
+
+            <TextView
+                style="@style/ww.white.13sp"
+                android:text="好友"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_line"/>
+
+        <LinearLayout
+            style="@style/ll_fragment_personal">
+
+            <TextView
+                android:id="@+id/tv_friend_theme_team_count"
+                style="@style/ww.white.13sp"
+                android:text="0"/>
+
+            <TextView
+                style="@style/ww.white.13sp"
+                android:text="球队"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

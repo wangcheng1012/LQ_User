@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white">
+
+
+    <include layout="@layout/item_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            style="@style/ll_details_content"
+            >
+
+            <TextView
+                style="@style/ww"
+
+                android:text="提现申请成功"
+                android:textColor="@color/bg_theme2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                style="@style/mw.hor"
+                >
+
+                <TextView
+                    style="@style/ww"
+                    android:textSize="16sp"
+                    android:text="¥ "
+                    android:textColor="@color/bg_red"
+                    />
+
+                <TextView
+                    style="@style/ww"
+                    android:text="00"
+                    android:textSize="32sp"
+                    android:textColor="@color/bg_red"
+                    />
+
+                <TextView
+                    style="@style/ww"
+                    android:textSize="16sp"
+                    android:text=".00"
+                    android:textColor="@color/bg_red"
+                    />
+            </LinearLayout>
+            
+            
+            <TextView
+                style="@style/ww.13sp"
+                android:layout_gravity="center_horizontal"
+                android:text="预计24小时内到账"
+                android:textColor="@color/bg_gray"
+                android:alpha="0.5"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                style="@style/mw.hor"
+                >
+
+                <TextView
+                    style="@style/ww"
+                    android:text="储蓄卡: "
+                    android:textColor="@color/bg_gray"
+                    />
+
+                <TextView
+                    style="@style/ww"
+                    android:text="中国xx银行"
+                    android:textColor="@android:color/black"
+                    />
+
+                <TextView
+                    style="@style/ww"
+                    android:text="  尾号 0000"
+                    android:textColor="@android:color/black"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                style="@style/mw.hor"
+                >
+
+                <TextView
+                    style="@style/ww"
+                    android:text="开户人: "
+                    android:textColor="@color/bg_gray"
+                    />
+
+                <TextView
+                    style="@style/ww"
+                    android:text="姓名"
+                    android:textColor="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/verify_true"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="70dp"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_commit"
+        android:text="完成"
+        />
+
+</LinearLayout>

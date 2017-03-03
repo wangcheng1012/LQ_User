@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:background="@android:color/transparent">
+
+    <LinearLayout
+        style="@style/ww"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_near_team_img"
+            android:layout_width="165dp"
+            android:layout_height="95dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/near_team_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_near_team_name"
+            style="@style/ww.black"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:text="球队"
+            />
+
+        <TextView
+            android:id="@+id/tv_near_team_distance"
+            style="@style/ww.13sp"
+            android:text="0.0km"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/bg_gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_near_img_list"
+            style="@style/ww"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

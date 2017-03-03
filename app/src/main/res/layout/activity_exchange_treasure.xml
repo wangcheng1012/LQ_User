@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/mm.ver"
+        android:background="@color/bg_white">
+
+        <include layout="@layout/item_title"/>
+
+        <com.dingwei.lq_user.ui.myview.MyScrollView
+            style="@style/mm">
+
+            <LinearLayout
+                style="@style/mm.ver">
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="请填写收货信息"
+                    android:textColor="@color/bg_gray"
+                    />
+
+                <LinearLayout
+                    style="@style/ll_details_content2"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    >
+
+                    <LinearLayout
+                        style="@style/mw.hor">
+
+                        <TextView
+                            style="@style/ww.13sp"
+                            android:text="姓名"
+                            android:textColor="@color/bg_gray"/>
+
+
+                        <EditText
+                            android:id="@+id/et_treasure_name"
+                            style="@style/ww"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="right|end"
+                            android:inputType="text"
+                            android:maxLength="18"
+                            android:maxLines="1"
+                            android:paddingRight="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <LinearLayout
+                        style="@style/mw.hor">
+
+                        <TextView
+                            style="@style/ww.13sp"
+                            android:text="电话"
+                            android:textColor="@color/bg_gray"/>
+
+
+                        <EditText
+                            android:id="@+id/et_treasure_phone"
+                            style="@style/ww"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="right|end"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            android:paddingRight="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <LinearLayout
+                        style="@style/mw.hor">
+
+                        <TextView
+                            style="@style/ww.13sp"
+                            android:text="地址"
+                            android:textColor="@color/bg_gray"/>
+
+                        <EditText
+                            android:id="@+id/et_treasure_address"
+                            style="@style/ww"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="right|end"
+                            android:inputType="text"
+                            android:maxLength="23"
+                            android:maxLines="1"
+                            android:paddingRight="20dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_exchange_treasure_add"
+                    style="@style/btn_commit"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="添加地址"
+                    />
+
+                <TextView
+                    style="@style/ww"
+                    android:layout_marginLeft="15dp"
+                    android:text="历史收货信息"
+                    android:textColor="@color/bg_gray"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_exchange_treasure"
+                    style="@style/mw"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_white_ellipse"/>
+
+                <Button
+                    android:id="@+id/btn_exchange_treasure_commit"
+                    style="@style/btn_commit"
+                    android:layout_marginBottom="15dp"
+                    android:text="立即兑换"
+                    />
+            </LinearLayout>
+        </com.dingwei.lq_user.ui.myview.MyScrollView>
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_exchange_treasure_hint"/>
+
+</FrameLayout>

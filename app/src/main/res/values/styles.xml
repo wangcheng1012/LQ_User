@@ -1,0 +1,215 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="mm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="mm.ver">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="mw.ver">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="mm.bgWhite">
+        <item name="android:background">@drawable/bg_white_ellipse</item>
+    </style>
+
+    <style name="ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ww.ver">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="wm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ww.white">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="wm.white">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ww.black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ww.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="ww.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ww.white.13sp">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="ww.white.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="mw.hor">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="mw.hor.bgWhite">
+        <item name="android:background">@drawable/bg_white_ellipse</item>
+    </style>
+    <style name="mw.hor.15dp">
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <!--自定义加载条-->
+    <style name="my_loadbar" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:windowCloseOnTouchOutside">false</item><!--点击其他地方dialog不消失-->
+    </style>
+    
+    <!--1px的细线-->
+    <style name="view1px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@color/bg_white</item>
+    </style>
+    <!--1dp的灰线-->
+    <style name="view1dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:alpha">0.3</item>
+        <item name="android:background">@color/bg_gray</item>
+    </style>
+
+    <!--1px的垂直线-->
+    <style name="vertical_line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/bg_white</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:alpha">0.4</item>
+    </style>
+
+    <!--提交按钮-->
+    <style name="btn_commit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@drawable/bg_btn_next</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--登录和注册的输入号码-->
+    <style name="input_number">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/font_theme2</item>
+    </style>
+
+    <!--登录和注册界面的标题-->
+    <style name="title_login_register">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/font_theme2</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!--个人中心-->
+    <style name="ll_fragment_personal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="item_personal_name">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="item_tv_ballpark_nearby">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bg_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ll_details_content" parent="mw.hor.15dp">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/bg_white_ellipse</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ll_details_content2" parent="mw.hor">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/bg_white_ellipse</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ww.right_edit_black">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">right</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="commons_progressStyle1" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/web_progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:maxHeight">2dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white"
+    >
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_theme"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_user_all"
+            style="@style/mw.hor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_user_all_title"
+                style="@style/ww"
+                android:text="全部"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_all"
+                style="@style/ww.white.10sp"
+                android:layout_marginTop="2dp"
+                android:text="/00"
+                android:textColor="@color/bg_gray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user_good"
+            style="@style/mw.hor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_user_good_title"
+                style="@style/ww"
+                android:text="好评"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_good"
+                style="@style/ww.white.10sp"
+                android:layout_marginTop="2dp"
+                android:text="/00"
+                android:textColor="@color/bg_gray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user_middle"
+            style="@style/mw.hor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_user_middle_title"
+                style="@style/ww"
+                android:text="中评"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_middle"
+                style="@style/ww.white.10sp"
+                android:layout_marginTop="2dp"
+                android:text="/00"
+                android:textColor="@color/bg_gray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user_bad"
+            style="@style/mw.hor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_user_bad_title"
+                style="@style/ww"
+                android:text="差评"
+                android:textColor="@color/bg_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_bad"
+                style="@style/ww.white.10sp"
+                android:layout_marginTop="2dp"
+                android:text="/00"
+                android:textColor="@color/bg_gray"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_user"
+        style="@style/mm"/>
+
+</LinearLayout>

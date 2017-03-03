@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/mm"
+             android:background="@drawable/bg_ball">
+
+    <RelativeLayout
+        android:id="@+id/rl_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_ball_ballpark"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/bg_round"
+            android:padding="15dp"
+            android:src="@drawable/ballpark"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/ww.ver"
+            android:layout_below="@id/iv_ball_ballpark"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/ww"
+                android:layout_marginTop="3dp"
+                android:text="COURT"
+                android:textColor="@color/bg_theme2"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                style="@style/ww.white"
+                android:textSize="12sp"
+                android:text="球场"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_ball_friend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/bg_round"
+            android:padding="15dp"
+            android:src="@drawable/friend"/>
+
+        <LinearLayout
+            style="@style/ww.ver"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_ball_friend"
+            android:layout_marginRight="46dp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                style="@style/ww"
+                android:layout_marginTop="3dp"
+                android:text="FRIENDS"
+                android:textColor="@color/bg_theme2"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                style="@style/ww.white"
+                android:textSize="12sp"
+                android:text="球友"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_ball_found"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="415dp"
+            android:background="@drawable/bg_round"
+            android:padding="15dp"
+            android:src="@drawable/found"/>
+
+        <LinearLayout
+            style="@style/ww.ver"
+            android:layout_below="@id/iv_ball_found"
+            android:layout_marginLeft="53dp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                style="@style/ww"
+                android:layout_marginTop="3dp"
+                android:text="FIND"
+                android:textColor="@color/bg_theme2"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                style="@style/ww.white"
+                android:textSize="12sp"
+                android:text="发现"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_ball_personal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="415dp"
+            android:background="@drawable/bg_round"
+            android:padding="15dp"
+            android:src="@drawable/personal"/>
+
+        <LinearLayout
+            style="@style/ww.ver"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_ball_personal"
+            android:layout_marginRight="45dp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                style="@style/ww"
+                android:layout_marginTop="3dp"
+                android:text="MEMBER"
+                android:textColor="@color/bg_theme2"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                style="@style/ww.white"
+                android:textSize="12sp"
+                android:text="我的"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_ball"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ball_icon"
+            android:padding="5dp"
+            android:layout_marginTop="345dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</FrameLayout>

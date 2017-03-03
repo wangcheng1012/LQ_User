@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_login_register"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="85dp"
+        android:text="快速登录"
+        android:layout_gravity="center"
+        android:src="@drawable/head_photo_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            style="@style/input_number"
+            android:background="@drawable/bg_line_under"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:maxLength="11"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ed_login_password"
+        style="@style/input_number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_line_under"
+        android:hint="密  码"
+        android:inputType="textPassword"
+        android:maxLength="16"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_commit"
+        android:text="登录"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="没账号？ 马上去  "
+            android:textColor="@color/font_theme"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_login_to_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/temp"
+            android:padding="10dp"
+            android:text="注册"
+            android:textColor="@color/bg_theme2"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_login_to_forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="找回密码"
+            android:textColor="@color/bg_theme2"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

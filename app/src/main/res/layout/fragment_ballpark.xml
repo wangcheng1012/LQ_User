@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+              style="@style/mm.ver">
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_theme">
+
+        <TextView
+            android:id="@+id/tv_ballpark_charge"
+            style="@style/item_tv_ballpark_nearby"
+            android:text="收费"/>
+
+        <TextView
+            android:id="@+id/tv_ballpark_free"
+            style="@style/item_tv_ballpark_nearby"
+            android:text="免费"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/mm"
+        >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_ballpark"
+            style="@style/mm"
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_ballpark_map_item"
+            style="@style/mw"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="15dp">
+
+            <LinearLayout
+                style="@style/mw.hor"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_ballpark_venue_name"
+                    style="@style/ww"
+                    android:text="XXX"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_is_full"
+                    style="@style/ww.12sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bg_gray_rectangle"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="1dp"
+                    android:text="顺畅"
+                    android:textColor="@color/bg_theme2"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/loc"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_ballpark_distance"
+                    style="@style/ww.12sp"
+                    android:text="0.0km"
+                    android:textColor="@color/bg_gray"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/mw.hor"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/mw.hor"
+                        android:layout_marginTop="2dp">
+
+                        <com.dingwei.lq_user.ui.myview.MyStarBar
+                            android:id="@+id/starBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            ratingbar:starCount="5"
+                            ratingbar:starDistance="5dp"
+                            ratingbar:starEmpty="@drawable/star_empty"
+                            ratingbar:starFill="@drawable/star_full"
+                            ratingbar:starSize="11dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_ballpark_score"
+                            style="@style/ww.13sp"
+                            android:layout_marginLeft="10dp"
+                            android:text="0"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        style="@style/mw.hor">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:src="@drawable/personal_head"
+                            />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:src="@drawable/personal_head"
+                            />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:src="@drawable/personal_head"
+                            />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:src="@drawable/personal_head"
+                            />
+
+                        <TextView
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/bg_btn_next"
+                            android:gravity="center"
+                            android:text="+16"
+                            android:textColor="@android:color/white"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tv_ballpark_venue_address"
+                        style="@style/ww.12sp"
+                        android:text="重庆"
+                        android:textColor="@color/bg_gray"
+                        />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_btn_next"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_ballpark_price1"
+                        style="@style/ww.white"
+                        android:text="免费"
+                        android:visibility="gone"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_ballpark_price2"
+                        style="@style/ww.ver">
+
+                        <TextView
+                            android:id="@+id/tv_ballpark_min"
+                            android:layout_gravity="center"
+                            style="@style/ww.white"
+                            android:text="¥0"
+                            />
+
+                        <TextView
+                            style="@style/ww.white"
+                            android:layout_gravity="center"
+                            android:text="起"
+                            android:textSize="11sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

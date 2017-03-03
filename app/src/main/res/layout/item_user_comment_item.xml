@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+                style="@style/mw"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        style="@style/mw.ver"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_ellipse"
+        android:paddingBottom="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        >
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_comment_nickname"
+                style="@style/ww"
+                android:layout_weight="1"
+                android:text="昵称"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_comment_add_time"
+                style="@style/ww"
+                android:text="2088-08-08"
+                android:textColor="@color/bg_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw.hor"
+            android:layout_marginTop="5dp">
+
+            <com.dingwei.lq_user.ui.myview.MyStarBar
+                android:id="@+id/starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="5dp"
+                ratingbar:starEmpty="@drawable/star_empty"
+                ratingbar:starFill="@drawable/star_full"
+                ratingbar:starSize="11dp"/>
+
+            <TextView
+                android:id="@+id/tv_comment_mark"
+                style="@style/ww.13sp"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textColor="@color/bg_gray"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_comment_content"
+            style="@style/mw"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/bg_gray666"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_comment_headimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head_photo_normal"
+        />
+
+
+</RelativeLayout>

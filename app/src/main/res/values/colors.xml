@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f2229</color>
+    <color name="colorPrimaryDark">#1f2229</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_login_register">#293446</color>
+    <color name="bg_theme">#1f2229</color>
+    <color name="bg_theme2">#0099ff</color>
+    <color name="bg_theme3">#cd4744</color>
+    <color name="font_theme">#4f6080</color>
+    <color name="font_theme2">#7e89a1</color>
+    <color name="font_theme4">#b3b3b3</color>
+    <color name="icon1">#fe974b</color>
+    <color name="icon2">#e41638</color>
+    <color name="font_btn_account">#ff9281</color>
+    <color name="bg_white">#e2e2e2</color>
+    <color name="bg_cfff">#c999</color>
+    <color name="bg_red">#f00</color>
+    <color name="bg_gray">#999</color>
+    <color name="bg_gray666">#666</color>
+    <color name="paint_xian">#57515f</color>
+    <color name="tra">#661f2229</color>
+
+</resources>

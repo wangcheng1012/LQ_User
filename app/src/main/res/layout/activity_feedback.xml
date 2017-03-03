@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/mm.ver"
+              android:background="@color/bg_white">
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        style="@style/ll_details_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/ww"
+            android:text="您的意见"
+            android:textColor="@color/bg_theme3"
+            />
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:hint="您的意见是我们前进的动力"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/bg_gray"
+            android:textSize="14sp"/>
+
+        <View
+            style="@style/view1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_feedback_add_photo"
+            style="@style/mw.hor"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_feedback_photo"
+                style="@style/ww"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/camera"
+                />
+            <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                android:id="@+id/bgaImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bga_snpl_plusDrawable="@drawable/add"
+                app:bga_snpl_maxItemCount="1"/>
+            <TextView
+                style="@style/ww.13sp"
+                android:layout_marginLeft="20dp"
+                android:text="点击这里还可以选择图片哟~!"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

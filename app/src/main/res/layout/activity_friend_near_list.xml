@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm.ver"
+              android:background="@color/bg_white"
+    >
+
+    <include layout="@layout/item_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_theme">
+
+        <LinearLayout
+            android:id="@+id/ll_friend_near_team_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_friend_near_teamName_list"
+                style="@style/ww"
+                android:layout_gravity="center"
+                android:text="球队"
+                android:textColor="@color/bg_gray"/>
+
+            <TextView
+                android:id="@+id/tv_friend_near_teamNum_list"
+                style="@style/ww"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/bg_gray"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_friend_near_friends_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_friend_near_friendsName_list"
+                style="@style/ww"
+                android:layout_gravity="center"
+                android:text="球友"
+                android:textColor="@color/bg_gray"/>
+
+            <TextView
+                android:id="@+id/tv_friend_near_friendsNum_list"
+                style="@style/ww"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:textSize="10sp"
+                android:textColor="@color/bg_gray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_friend_near_list"
+        style="@style/mm"/>
+
+</LinearLayout>

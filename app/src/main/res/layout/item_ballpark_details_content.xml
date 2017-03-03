@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/ll_details_content">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/clock"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_count"
+            style="@style/ww.13sp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="0次"
+            android:textColor="@color/bg_gray"
+            />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/loc"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_distance"
+            style="@style/ww.13sp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="0km"
+            android:textColor="@color/bg_gray"
+            />
+
+        <ImageView
+            android:id="@+id/iv_details_comment_count"
+            android:layout_width="36dp"
+            android:layout_height="16dp"
+            android:paddingLeft="20dp"
+            android:src="@drawable/mes"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_comment_count"
+            style="@style/ww.13sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="@color/bg_gray"
+            />
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_ballpark_details_baseinfo"/>
+
+    <LinearLayout
+        style="@style/ll_details_content"
+        >
+
+        <TextView
+            style="@style/ww"
+            android:text="预约人数"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/et_details_number"
+            style="@style/ww"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/bg_theme3"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_details_content"
+        android:layout_marginBottom="0dp"
+        android:padding="0dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_details_type2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="全场"
+            android:textColor="@color/bg_red"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_type1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="半场"
+            android:textColor="@color/bg_gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <View
+            android:id="@+id/tv_details_type2_xian"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/bg_red"
+            />
+
+        <View
+            android:id="@+id/tv_details_type1_xian"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:textColor="@color/bg_white"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_ballpark_details"
+        style="@style/mw"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        style="@style/ll_details_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/ww"
+            android:layout_weight="1"
+            android:text="可选球场"
+            android:textColor="@color/font_theme2"
+            android:textSize="14sp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_find_ballpark"
+            style="@style/mw"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_temp"
+            style="@style/ww.12sp"
+            android:layout_marginTop="5dp"
+            android:text="暂无球场"
+            android:textColor="@color/bg_gray"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_details_all_info"
+        style="@style/ww"
+        android:layout_gravity="center_horizontal"
+        android:text="全场"
+        android:textColor="@color/bg_gray"
+        />
+
+    <LinearLayout
+        style="@style/mw.hor"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            style="@style/ww"
+            android:text="¥"
+            android:textColor="@color/bg_red"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_price"
+            style="@style/ww"
+            android:text="0.00"
+            android:textColor="@color/bg_red"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ballpark_details_commit"
+        style="@style/btn_commit"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="立即预约"
+        />
+
+</LinearLayout>

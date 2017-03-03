@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/mm"
+              android:background="@color/bg_theme"
+              android:orientation="vertical">
+
+    <include layout="@layout/item_title"/>
+
+    <FrameLayout
+        style="@style/mm"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_account_balance">
+
+        <LinearLayout
+            style="@style/mm.ver"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_account"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/ww.white"
+                    android:layout_marginTop="8dp"
+                    android:text="¥ "
+                    android:textSize="24sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_balance_num"
+                    style="@style/ww.white"
+                    android:text="0"
+                    android:textSize="48sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_balance_float"
+                    style="@style/ww.white"
+                    android:layout_marginTop="8dp"
+                    android:text=".00"
+                    android:textSize="24sp"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_account_records"
+                style="@style/mw"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:padding="15dp"
+                >
+
+                <TextView
+                    style="@style/ww.black"
+                    android:text="今日明细"
+                    />
+
+                <ImageView
+                    style="@style/ww"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/right_arrow"
+                    />
+
+            </RelativeLayout>
+
+
+            <View
+                style="@style/view1dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_account_balance"
+                style="@style/mm"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_account_add_money"
+                style="@style/wm"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_btn_white"
+                android:text="充值"
+                android:textColor="@color/font_btn_account"/>
+
+            <Button
+                android:id="@+id/btn_account_out_money"
+                style="@style/wm"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_btn_white"
+                android:text="提现"
+                android:textColor="@color/font_btn_account"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
