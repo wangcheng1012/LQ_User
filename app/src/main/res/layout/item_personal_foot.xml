@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/ll_personal_reservation"
@@ -11,47 +11,43 @@
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/pic33"
-            />
+            android:src="@drawable/pic33" />
 
         <TextView
             style="@style/item_personal_name"
-            android:text="我的预约"/>
+            android:text="我的预约" />
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/right_arrow"
-            />
+            android:src="@drawable/right_arrow" />
 
     </LinearLayout>
 
-    <View style="@style/view1px"/>
+    <View style="@style/view1px" />
 
     <LinearLayout
-        style="@style/mw.hor"
         android:id="@+id/ll_account_balance"
+        style="@style/mw.hor"
         android:gravity="center">
 
 
         <ImageView
             style="@style/ww"
+            android:paddingBottom="15dp"
             android:paddingLeft="15dp"
             android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:src="@drawable/pic31"
-            />
+            android:src="@drawable/pic31" />
 
         <TextView
             style="@style/item_personal_name"
-            android:text="账户余额"/>
+            android:text="账户余额" />
 
         <TextView
             style="@style/ww.12sp"
+            android:layout_marginRight="1px"
             android:layout_marginTop="3dp"
             android:text="¥"
-            android:layout_marginRight="1px"
-            android:textColor="@color/bg_theme3"
-            />
+            android:textColor="@color/bg_theme3" />
 
         <TextView
             android:id="@+id/tv_personal_balance"
@@ -59,18 +55,16 @@
             android:layout_marginRight="20dp"
             android:text="00.00"
             android:textColor="@color/bg_theme3"
-            android:textSize="22sp"
-            />
+            android:textSize="22sp" />
 
         <ImageView
             style="@style/ww"
             android:paddingRight="15dp"
-            android:src="@drawable/right_arrow"
-            />
+            android:src="@drawable/right_arrow" />
 
     </LinearLayout>
 
-    <View style="@style/view1px"/>
+    <View style="@style/view1px" />
 
     <LinearLayout
         android:id="@+id/ll_Records_consumption"
@@ -79,21 +73,19 @@
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/pic32"
-            />
+            android:src="@drawable/pic32" />
 
         <TextView
             style="@style/item_personal_name"
-            android:text="账户明细"/>
+            android:text="账户明细" />
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/right_arrow"
-            />
+            android:src="@drawable/right_arrow" />
 
     </LinearLayout>
 
-    <View style="@style/view1px"/>
+    <View style="@style/view1px" />
 
     <LinearLayout
         android:id="@+id/ll_treasure_action"
@@ -102,22 +94,20 @@
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/pic30"
-            />
+            android:src="@drawable/pic30" />
 
         <TextView
             style="@style/item_personal_name"
-            android:text="寻宝活动"/>
+            android:text="寻宝活动" />
 
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/right_arrow"
-            />
+            android:src="@drawable/right_arrow" />
 
     </LinearLayout>
 
-    <View style="@style/view1px"/>
+    <View style="@style/view1px" />
 
     <LinearLayout
         android:id="@+id/ll_my_notice"
@@ -126,17 +116,34 @@
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/pic29"/>
+            android:src="@drawable/pic29" />
 
-        <TextView
-            style="@style/item_personal_name"
-            android:text="系统消息"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/item_personal_name"
+                android:layout_width="wrap_content"
+                android:text="系统消息" />
+
+            <View
+                android:id="@+id/message_state"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/shape_oval"
+                android:visibility="gone" />
+
+        </FrameLayout>
 
         <ImageView
             style="@style/ww"
-            android:src="@drawable/right_arrow"/>
+            android:src="@drawable/right_arrow" />
 
     </LinearLayout>
 
-    <View style="@style/view1px"/>
+    <View style="@style/view1px" />
 </LinearLayout>

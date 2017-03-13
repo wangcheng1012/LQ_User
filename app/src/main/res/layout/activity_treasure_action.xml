@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              style="@style/mm.ver"
-              android:background="@color/bg_theme">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/mm.ver"
+    android:background="@color/bg_theme">
 
-    <include layout="@layout/item_title"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/treasure_action_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_theme"
+        app:popupTheme="@style/OverflowMenuStyle"
+        android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <ImageButton
+            android:id="@+id/ib_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/tv_title_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
 
     <WebView
         android:id="@+id/web_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

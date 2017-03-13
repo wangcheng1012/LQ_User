@@ -68,12 +68,12 @@
         "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_chatting_setmode_voice_btn_normal1.png"
     },
     {
-        "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_chat_video_mask_to.9.png",
-        "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_chat_video_mask_to.9.png"
-    },
-    {
         "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_ic_launcher.png",
         "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_ic_launcher.png"
+    },
+    {
+        "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_chat_video_mask_to.9.png",
+        "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_chat_video_mask_to.9.png"
     },
     {
         "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_to_group_details_normal.png",
@@ -180,12 +180,12 @@
         "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_type_select_btn_pressed.png"
     },
     {
-        "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_location_msg.9.png",
-        "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_location_msg.9.png"
-    },
-    {
         "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_default_avatar.png",
         "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_default_avatar.png"
+    },
+    {
+        "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_location_msg.9.png",
+        "source": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_location_msg.9.png"
     },
     {
         "merged": "E:\\work\\android\\AndroidStudioProjects\\LQ_User\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_chatfrom_bg_focused.9.png",

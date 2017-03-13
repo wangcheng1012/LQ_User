@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/bg_login_register"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login_register"
+    android:orientation="vertical">
 
-    <include layout="@layout/item_title"/>
+    <include layout="@layout/item_title" />
 
     <TextView
         android:id="@+id/tv_register_title"
         style="@style/title_login_register"
-        android:text="新用户注册"/>
+        android:text="新用户注册" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:background="@drawable/bg_line_under"
             android:hint="手机号"
             android:inputType="phone"
-            android:maxLength="11"/>
+            android:maxLength="11" />
 
         <Button
             android:id="@+id/btn_register_sendcode"
@@ -35,7 +35,7 @@
             android:background="@drawable/bg_edit_rectangle"
             android:text="获取验证码"
             android:textColor="@color/bg_theme2"
-            android:textSize="11sp"/>
+            android:textSize="11sp" />
     </RelativeLayout>
 
     <EditText
@@ -44,7 +44,41 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_line_under"
         android:hint="验证码"
-        android:maxLength="8"/>
+        android:maxLength="8" />
+
+    <RelativeLayout
+        android:id="@+id/rl_register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_register_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/bg_img_exchange"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="阅读并同意"
+            android:textColor="@color/font_theme"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_register_xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/cb_register_read"
+            android:layout_toRightOf="@+id/cb_register_read"
+            android:text="平台协议"
+            android:textColor="@color/bg_theme2"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
 
     <ImageButton
         android:id="@+id/ib_register_next"
@@ -54,6 +88,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/round_next"/>
+        android:src="@drawable/round_next" />
 
 </LinearLayout>

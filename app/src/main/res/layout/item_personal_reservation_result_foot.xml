@@ -160,6 +160,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll_result_price_layout"
                     style="@style/mw.hor"
                     android:layout_marginTop="5dp"
 

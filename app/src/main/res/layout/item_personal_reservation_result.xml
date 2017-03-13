@@ -15,10 +15,12 @@
             >
 
             <LinearLayout
+                android:id="@+id/ll_result_code_layout"
                 style="@style/ll_details_content"
                 android:layout_marginBottom="0dp"
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
+                android:visibility="gone"
                 >
 
                 <ImageView

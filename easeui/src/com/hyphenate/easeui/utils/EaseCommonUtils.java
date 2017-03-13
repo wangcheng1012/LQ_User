@@ -31,6 +31,7 @@ import android.app.ActivityManager.RunningTaskInfo;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Environment;
 import android.text.TextUtils;
 
 public class EaseCommonUtils {
@@ -59,7 +60,8 @@ public class EaseCommonUtils {
 	 * @return
 	 */
 	public static boolean isSdcardExist() {
-		return android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
+        return  Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
+//		return android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
 	}
 	
 	public static EMMessage createExpressionMessage(String toChatUsername, String expressioName, String identityCode){

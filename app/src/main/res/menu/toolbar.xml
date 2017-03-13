@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/history"
+        android:title="历史活动"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/rule"
+        android:title="活动规则"
+        app:showAsAction="never" />
+</menu>

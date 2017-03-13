@@ -4,8 +4,10 @@
               android:background="@color/bg_white">
 
     <LinearLayout
+        android:id="@+id/ll_result_code_layout"
         style="@style/ll_details_content"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="0dp"
         android:orientation="vertical"
         >
 
@@ -32,7 +34,7 @@
                 android:id="@+id/tv_result_code"
                 android:textColor="@color/bg_red"
                 style="@style/ww"
-                android:text="asdf12345"
+                android:text="xxx"
                 android:textSize="16sp"
                 />
 
@@ -58,6 +60,7 @@
 
     <LinearLayout
         style="@style/ll_details_content"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:orientation="vertical"
         >
@@ -154,6 +157,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_result_price_layout"
             style="@style/mw.hor"
             android:layout_marginTop="5dp"
             >

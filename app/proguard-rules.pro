@@ -18,3 +18,8 @@
 
 -keep class com.hyphenate.** {*;}
 -dontwarn  com.hyphenate.**
+
+#https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+-keep class com.chad.library.adapter.** {
+   *;
+}

@@ -192,6 +192,7 @@
         >
 
         <TextView
+            android:id="@+id/tv_details_price1"
             style="@style/ww"
             android:text="¥"
             android:textColor="@color/bg_red"
