@@ -27,7 +27,7 @@
         <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
         <item name="android:dropDownHorizontalOffset">0dp</item>
         <!-- 设置弹出菜单文字颜色 -->
-        <item name="android:textColor">@color/black_deep</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <!-- 指定了 textColorPrimary 和 textColorSecondary 配置来改变标题和菜单溢出按钮的颜色 -->
@@ -266,6 +266,14 @@
         <item name="android:indeterminateDrawable">@null</item>
         <item name="android:minHeight">2dp</item>
         <item name="android:maxHeight">2dp</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
 
 </resources>

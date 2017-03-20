@@ -41,6 +41,13 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
+    <!--  腾讯bug  -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
     <!-- 极光 -->
     <permission
         android:name="com.dingwei.lq_user.permission.JPUSH_MESSAGE"
@@ -243,6 +250,11 @@
             android:exported="false"
             android:screenOrientation="behind"></activity>
         <!-- 支付宝 end -->
+
+        <activity
+            android:name="acp.AcpActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent" />
 
         <activity
             android:name=".ui.activity.RegisterActivity"

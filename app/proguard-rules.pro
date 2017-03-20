@@ -23,3 +23,6 @@
 -keep class com.chad.library.adapter.** {
    *;
 }
+# 腾讯bug
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}
