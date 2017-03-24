@@ -39,11 +39,11 @@ public class EaseConstant {
 
     public static final String EXTRA_MY_UID = "fromUid";                      //发送者uid
     public static final String EXTRA_USER_UID = "otherUid";                  //对方的UID
-
-    /*
-    #define hx_teamId               @"teamId"//球队id
-    #define hx_teamHeadImg          @"teamHeadImg"//群头像
-    #define hx_teamName             @"teamName"//群昵称
+    //环信字段 群聊
+    public static final String EXTRA_GROUP_ID = "teamId";                         //球队id
+    public static final String EXTRA_GROUP_IMAGE = "teamHeadImg";                //群头像
+    public static final String EXTRA_GROUP_MYNAME = "teamName";                      //群昵称
+     /*
     #define hx_fromNickName         @"fromNickName"      //发送者昵称
     #define hx_fromHeadImg          @"fromHeadImg"       //发送者头像
     #define hx_fromUid              @"fromUid"           //发送者uid

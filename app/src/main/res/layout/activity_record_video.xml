@@ -35,7 +35,6 @@
                 android:textColor="#ffffff"
                 android:visibility="gone" />
 
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,6 +71,7 @@
                 android:scaleType="center"
                 android:src="@mipmap/area_right_up" />
         </RelativeLayout>
+
     </FrameLayout>
 
     <FrameLayout

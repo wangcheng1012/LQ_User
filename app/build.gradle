@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 23//编译版本，真正决定代码是否能编译的关键
     buildToolsVersion "23.0.3"
     defaultConfig {
         applicationId "com.dingwei.lq_user"
         minSdkVersion 14
-        targetSdkVersion 22
-        versionCode 100
-        versionName "1.0.5"
+        targetSdkVersion 23 //只是一个标示，如果targetSdkVersion与目标设备的API版本相同时，运行效率可能会高一些，编译阶段没有实质性作用
+        versionCode 107
+        versionName "1.0.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 //        ndk {
@@ -22,7 +22,6 @@ android {
                 JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
         ]
     }
-
     signingConfigs {
         release {
             keyAlias 'wanqiu'
@@ -35,8 +34,8 @@ android {
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
 
-                        // apk_渠道名-版本号-版本名称-编译时间.apk   ${variant.productFlavors[0].name}-
-                        def fileName = "apk_${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
+                        // applicationId_渠道名-版本号-版本名称-编译时间.apk   ${variant.productFlavors[0].name}-
+                        def fileName = "${applicationId}_${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
                         output.outputFile = new File(outputFile.parent, fileName)
                     }
                 }
@@ -68,7 +67,7 @@ android {
 }
 
 def releaseTime() {
-    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+    return new Date().format("yyMMdd", TimeZone.getTimeZone("UTC"))
 }
 
 dependencies {
@@ -79,8 +78,8 @@ dependencies {
 //    testCompile 'junit:junit:4.12'
     compile 'com.android.support:multidex:'
     compile 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
     compile 'com.lzy.net:okgo:2.1.3'
     compile 'com.alibaba:fastjson:1.1.55.android'
     compile 'com.jakewharton:butterknife:7.0.1'

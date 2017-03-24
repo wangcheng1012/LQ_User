@@ -251,10 +251,10 @@
             android:screenOrientation="behind"></activity>
         <!-- 支付宝 end -->
 
-        <activity
-            android:name="acp.AcpActivity"
-            android:launchMode="singleTask"
-            android:theme="@style/Theme.Transparent" />
+        <!--<activity-->
+            <!--android:name="acp.AcpActivity"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:theme="@style/Theme.Transparent" />-->
 
         <activity
             android:name=".ui.activity.RegisterActivity"
@@ -449,7 +449,7 @@
             android:name=".ui.activity.PersonalDynamicActivity"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.activity.UserCommentActivity"
             android:screenOrientation="portrait"
@@ -462,9 +462,9 @@
         <activity
             android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
-            android:screenOrientation="portrait" />
+        <!--<activity-->
+            <!--android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"-->
+            <!--android:screenOrientation="portrait" />-->
         <activity
             android:name=".ui.activity.FoundPhotoActivity"
             android:screenOrientation="portrait"

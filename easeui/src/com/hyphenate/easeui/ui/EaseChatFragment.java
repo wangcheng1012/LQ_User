@@ -122,7 +122,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
     }
 
     String userId;
-    String userHeadImg, userNickName, userUid;
+    protected String userHeadImg, userNickName, userUid;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -130,30 +130,19 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
         fragmentArgs = getArguments();
 
         // check if single chat or group chat
-        chatType = fragmentArgs.getInt(EaseConstant.EXTRA_CHAT_TYPE);
-        System.out.println("chatType:" + chatType);
-        if (chatType == EaseConstant.CHATTYPE_SINGLE) {
-            toChatUsername = fragmentArgs.getString(EaseConstant.EXTRA_USER_ID);
-            if (toChatUsername == null) {
-                Log.i("aaa","toChatUsername  == null");
-                return;
-            }
-            userId = toChatUsername;
-            userNickName = fragmentArgs.getString(EaseConstant.EXTRA_USER_NICK_NAME);
-            userHeadImg = fragmentArgs.getString(EaseConstant.EXTRA_USER_HEAD_IMG);
-            userUid = fragmentArgs.getString(EaseConstant.EXTRA_USER_UID);
-
-        } else if (chatType == EaseConstant.CHATTYPE_GROUP) {
-//            toChatUsername = fragmentArgs.getString("groupHXID");
-//            mGroupNmae = fragmentArgs.getString(EaseConstant.EXTRA_GROUP_MYNAME);
-//            mGroupID = fragmentArgs.getString(EaseConstant.EXTRA_GROUP_ID);
-        }
-
-
-        // check if single chat or group chat
         chatType = fragmentArgs.getInt(EaseConstant.EXTRA_CHAT_TYPE, EaseConstant.CHATTYPE_SINGLE);
         // userId you are chat with or group id
         toChatUsername = fragmentArgs.getString(EaseConstant.EXTRA_USER_ID);
+        System.out.println("chatType:" + chatType);
+
+        if (toChatUsername == null) {
+            Log.i("aaa","toChatUsername  == null");
+            return;
+        }
+        userId = toChatUsername;
+        userNickName = fragmentArgs.getString(EaseConstant.EXTRA_USER_NICK_NAME);
+        userHeadImg = fragmentArgs.getString(EaseConstant.EXTRA_USER_HEAD_IMG);
+        userUid = fragmentArgs.getString(EaseConstant.EXTRA_USER_UID);
 
         super.onActivityCreated(savedInstanceState);
     }
@@ -787,6 +776,12 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
         message.setAttribute(EaseConstant.EXTRA_USER_NICK_NAME, userNickName);
         message.setAttribute(EaseConstant.EXTRA_USER_HEAD_IMG, userHeadImg);
         message.setAttribute(EaseConstant.EXTRA_USER_UID, userUid);
+        //群聊
+        message.setAttribute(EaseConstant.EXTRA_GROUP_ID, userId);
+        message.setAttribute(EaseConstant.EXTRA_GROUP_IMAGE, userHeadImg);
+        message.setAttribute(EaseConstant.EXTRA_GROUP_MYNAME, userNickName);
+
+
 
         //send message
         EMClient.getInstance().chatManager().sendMessage(message);
